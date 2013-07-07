@@ -9,7 +9,7 @@ var read_file = function (file_name) {
 	if (err) throw err;
 	rs = data;
     });
-    return ts.toString ();
+    return ts.toString ('utf-8');
 }
 
 app.get('/', function(request, response) {
