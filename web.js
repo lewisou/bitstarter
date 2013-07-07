@@ -4,9 +4,8 @@ var app = express.createServer(express.logger());
 
 var read_file = function (file_name) {
     var fs = require ('fs');
-    var rs = '';
     var rs = fs.readFileSync (file_name, 'utf-8');
-    return ts.toString ('utf-8');
+    return rs.toString ('utf-8');
 }
 
 app.get('/', function(request, response) {
