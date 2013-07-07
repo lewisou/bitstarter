@@ -5,7 +5,7 @@ var app = express.createServer(express.logger());
 var read_file = function (file_name) {
     var fs = require ('fs');
     var rs = '';
-    fs.readFileSync ('/home/dev/startupeng/bitstarter/' + file_name, function (err, data) {
+    fs.readFileSync (file_name, function (err, data) {
 	if (err) throw err;
 	rs = data;
     });
